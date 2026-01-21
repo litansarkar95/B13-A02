@@ -92,7 +92,9 @@ border-bottom: 1px solid rgba(65, 37, 103, 1);
             padding-left: 2.0rem;
             cursor: pointer;
 }
-
+.hamburger-menu{
+    display: none;
+}
 /* banner  */
 .banner-image{
             width: 350px;
@@ -201,7 +203,7 @@ hr {
   border: 0;                 
   height: 1px;                
   background-color: rgba(255, 255, 255, 0.3); 
- margin: 10px 4rem;            
+  margin: 10px 4rem;            
 }
 
 
@@ -403,4 +405,154 @@ justify-content: space-between;
     gap: 8px;
     color: #FFFFFF;
     padding: 1rem;
+}
+
+/** #########################################################################
+######################## Responsive ###########################################
+#######################################################################  */
+
+/* Small device responsive   */
+
+@media screen and (max-width:576px){
+    header .head-btn , .nav-links{
+      display: none;
+    }
+    nav{
+   padding: 10px 20px;
+}
+  header  .logo h2{
+     font-size: 2.2rem;    
+
+}
+ .hamburger-menu{
+        display: inline-block;
+        cursor: pointer;
+   
+    }
+
+     .banner-image{
+        max-width: 250px;
+    }
+     .banner-image img{
+        max-width: 70px;
+    }
+    .badge{
+    top: 50px !important;
+    right: 12px;
+    }
+      .banner-text{
+      margin-top: -40px;
+      
+    }
+    .banner-text h2{
+      font-size: 3rem;
+      letter-spacing: 3px;
+    }
+    .banner-text p{
+      line-height: 20px;
+      font-size:16px;
+    }
+    /** about */
+.about{
+ 
+  padding: 20px 0px;
+
+}
+    .about h2{
+
+  font-size: 2.2rem;
+    padding: 20px 10px;
+ 
+}
+
+.about-text p{
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 0;  
+    
+ 
+}
+
+.about-count{
+margin: 2rem 0;
+display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 14px;
+ text-align: center;
+
+}
+.abount-one{
+  font-size: 2rem;
+}
+
+.abount-one p{
+  font-size: 11px;
+  margin: 0;
+  padding-top: 10px;
+
+  
+}
+/** why  **/
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px 1px;
+}
+
+.why-choose .title, .fearured-main .title{
+  font-size: 32px;
+  margin-top: -50px;
+}
+
+ 
+.featured-card-container{
+    display: flex;
+    flex-direction: column; 
+    gap: 30px 3px;
+}
+
+.featured-card-content .card-title{
+  font-size:  16px;
+ 
+}
+
+.fearured-host{
+    width: 92%;
+    margin: 1rem auto;
+  }
+   .host-card{
+    flex-direction: column;
+    padding: 32px 24px;
+    text-align: center;
+    gap: 24px;
+  }
+  
+  .social-links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+/** footer **/
+ .footer-main{
+    padding: 64px 16px;
+    gap: 24px;
+  }
+
+
+  .footer-social-links ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px 24px;
+    justify-items: center; 
+  }
+
+  .footer-social-links li a{
+    font-size: 0.95rem;
+    padding: 12px 16px;
+  
+}
+
 }
